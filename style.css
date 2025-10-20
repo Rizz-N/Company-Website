@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 60rem;
+    position: sticky;
+    top: 0;
+    background-color: rgb(7, 131, 131);
+}
+.navbar h1{
+    color: white;
+}
+
+.links-wrap{
+    font-size: 1.5rem;
+    display: flex;
+    gap: 2rem;
+}
+.links-wrap a{
+color: white;
+}
