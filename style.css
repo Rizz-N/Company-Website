@@ -31,6 +31,14 @@
 
 .links-wrap a{
 color: white;
+padding: 0 10px;
+}
+
+.links-wrap a:hover{
+    background: rgba(255, 255, 255, 0.5);
+    transition: all 0.5s ease;
+    padding: 0 10px;
+    border-radius: 8px; 
 }
 
 .hero-section{
@@ -143,4 +151,87 @@ color: white;
     .main-content-image .image-box:nth-child(3) {
       grid-row: 2;           /* kanan bawah */
       grid-column: 2;
+    }
+
+    .sejarah{
+        padding: 2rem 5rem;
+    }
+    iframe{
+        float: left;
+        margin: 1rem;
+    }
+    .sejarah h1{
+          font-size: 2.5rem;
+        font-weight: 700;
+        color: #222;
+    }
+    .sejarah p{
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .footer-top-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 5rem;
+        background-color: rgb(0, 17, 43);
+    }
+    .footer-top-container .caption{
+        color: white;
+        width: 30%;
+    }
+    .caption .support{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        color: white;
+    }
+
+    .caption .support a{
+        color: white;
+    }
+
+    .footer-top-container .pages{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;  
+    }
+
+    .footer-top-container .pages a{
+        color: white;
+    }
+
+    .footer-top-container .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-top-container .contact a{
+        color: white;
+    }
+
+    .footer-bottom-container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 5rem;
+        background-color: rgb(0, 17, 43);
+        color: white;
+    }
+    .footer-bottom-container::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        border-top: 3px solid gray;
+    }
+
+    .footer-bottom-container .social{
+        display: flex;
+        gap: 1rem;
+    }
+    .footer-bottom-container .social a{
+        color: white;
     }
