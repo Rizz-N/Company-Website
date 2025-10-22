@@ -4,7 +4,9 @@
     text-decoration: none;
     font-family: "Poppins", sans-serif;
 }
-
+body{
+    scroll-behavior: smooth;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -12,12 +14,18 @@
     padding: 1rem 3rem;
     border-radius: 50px;
     position: fixed;
+    top: 0;
     width: 60vw;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
     margin: 1rem;
-    background-color: rgba(0, 17, 43, 0.8);
+    background-color: rgba(0, 17, 43, 0.5);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .navbar h1{
     color: white;
@@ -31,11 +39,13 @@
 
 .links-wrap a{
 color: white;
+font-size: 1rem;
 padding: 0 10px;
+border-radius: 8px;
 }
 
 .links-wrap a:hover{
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
     transition: all 0.5s ease;
     padding: 0 10px;
     border-radius: 8px; 
@@ -235,3 +245,116 @@ padding: 0 10px;
     .footer-bottom-container .social a{
         color: white;
     }
+
+    /* history page */
+    .wiki-container {
+            max-width: 1200px;
+            margin: 8rem auto;
+            padding: 0 2rem;
+        }
+
+        .wiki-container h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            border-bottom: 3px solid #ffd700;
+            padding-bottom: 1rem;
+        }
+
+        #wiki-content {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .loading {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            padding: 2rem;
+        }
+
+        .source {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            margin-top: 1rem;
+        }
+
+        .source a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .source a:hover {
+            text-decoration: underline;
+        }
+
+        /* Styling untuk konten Wikipedia */
+        #wiki-content h2 {
+            color: #2c3e50;
+            margin: 1.5rem 0 1rem 0;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 0.5rem;
+        }
+
+        #wiki-content h3 {
+            color: #34495e;
+            margin: 1.2rem 0 0.8rem 0;
+        }
+
+        #wiki-content p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        #wiki-content ul, #wiki-content ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        #wiki-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        #wiki-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            background: #f8f9fa;
+        }
+
+        #wiki-content table, #wiki-content th, #wiki-content td {
+            border: 1px solid #ddd;
+        }
+
+        #wiki-content th, #wiki-content td {
+            padding: 0.8rem;
+            text-align: left;
+        }
+
+        #wiki-content th {
+            background: #2c3e50;
+            color: white;
+        }
+
+        #wiki-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 1rem 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+
+        .error {
+            background: #e74c3c;
+            color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: center;
+            margin: 1rem 0;
+        }
